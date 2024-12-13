@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blood-pact",
+	"version": "1.0.0",
+	"name": "Blood Pact",
+	"description": "Making Deals, Enforcing Contracts, Weapons And More.",
+	"authors": [
+		"Wolf"
+	],
+	"contact": {
+		"homepage": "https://Wolf_Mods.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/blood-pact/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wolf.bloodpact.BloodPact"
+		],
+		"fabric-datagen": [
+			"wolf.bloodpact.BloodPactDataGenerator"
+		],
+		"client": [
+			"wolf.bloodpact.BloodPactClient"
+		]
+	},
+	"mixins": [
+		"blood-pact.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
